@@ -29,6 +29,15 @@ export const resolvers = {
   Game: {
     reviews(parent) {
       return db.reviews.filter((r) => r.game_id === parent.id)
+    },
+    reviewAuthors(parent){
+      const reviews = db.reviews.filter((r) => r.game_id === parent.id);
+      let authors = [];
+      for (const r of reviews){
+        let author = db.authors.find((a)=> a.id === r.author_id )
+        if (author) authors.push(author);
+      }
+      return authors;
     }
   },
   Review: {
