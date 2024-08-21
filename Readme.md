@@ -1,15 +1,15 @@
-
 ## What is This
-This is Apolloe GraqhQL server. 
-The main purpose is for testing GraqhQL.
+- It is GraqhQL server. 
+- It is Node.js project.
+- It use @apollo/server lib.
+- The main purpose is for testing GraqhQL.
 
-## Setup
-Run `npm intall` and `npm start` at terminal.
-Server will be ready at: http://localhost:4000/
+## Run Server
+- Run `npm intall` and `npm start`.
+- Server will be ready at: http://localhost:4000/
 
-Setup detail on [Apolloe Doc](https://www.apollographql.com/docs/apollo-server/getting-started)
-
-## Test
+## Test Server
+Visit http://localhost:4000 in browser, which will run the Apollo Sandbox for Client side test.
 
 ### Query Games
 Operation:
@@ -44,3 +44,5 @@ Variable:
 }
 ```
 
+## More info
+- Setup detail on [Apolloe Doc](https://www.apollographql.com/docs/apollo-server/getting-started)
